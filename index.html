@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aryan Software Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html { scroll-behavior: smooth; }
+
+.scroll-x {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.scroll-x::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 10px;
+}
+
+.card {
+  min-width: 320px;
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 24px;
+  transition: all 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(6,182,212,0.4);
+}
+</style>
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-cyan-400/30 px-6 py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex items-center gap-4">
+      <img src="logo.jpg" class="w-12 h-12 object-contain rounded-xl">
+      <h1 class="text-xl font-bold text-cyan-400">Aryan Software Solutions</h1>
+    </div>
+    <div class="flex gap-6 text-sm">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#training">Training</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-[90vh] flex items-center justify-center text-center px-6">
+  <div>
+    <h2 class="text-6xl font-bold mb-6">Crafting Tomorrow’s Solutions</h2>
+    <p class="text-slate-300 max-w-2xl mx-auto">
+      Innovative software, intelligent systems, and future-ready digital solutions.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-20 px-6 text-center bg-slate-800">
+  <h2 class="text-4xl font-bold mb-6">About Us</h2>
+  <p class="max-w-3xl mx-auto text-slate-300">
+    Aryan Software Solutions delivers cutting-edge technology solutions across IoT,
+    AI/ML, Data Science, Web and Mobile platforms with a focus on quality and innovation.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+  <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
+  <div class="scroll-x">
+    <div class="card">🚧 Smart City IoT (Ongoing)</div>
+    <div class="card">📊 Data Analytics Dashboard</div>
+    <div class="card">🛒 E-Commerce Platform</div>
+    <div class="card">🏥 Healthcare Management System</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 px-6 bg-slate-800">
+  <h2 class="text-4xl font-bold mb-10 text-center">Services</h2>
+  <div class="scroll-x">
+    <div class="card">🌐 Internet of Things</div>
+    <div class="card">🔐 Cyber Security</div>
+    <div class="card">📱 Mobile App (Android & iOS)</div>
+    <div class="card">💻 Web Development</div>
+    <div class="card">🤖 AI / ML</div>
+    <div class="card">📈 Data Science</div>
+  </div>
+</section>
+
+<!-- TRAINING -->
+<section id="training" class="py-20 px-6">
+  <h2 class="text-4xl font-bold mb-10 text-center">Training Programs</h2>
+  <div class="scroll-x">
+    <div class="card">📘 Python & Data Science</div>
+    <div class="card">🤖 AI / ML Certification</div>
+    <div class="card">📱 Full-Stack Web Development</div>
+    <div class="card">☁️ Cloud Computing (AWS)</div>
+    <div class="card">🔐 Cyber Security Training</div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback" class="py-20 px-6 bg-slate-800">
+  <h2 class="text-4xl font-bold mb-10 text-center">Client Feedback</h2>
+  <div class="scroll-x">
+    <div class="card">⭐ “Excellent delivery and support.”</div>
+    <div class="card">⭐ “Highly professional team.”</div>
+    <div class="card">⭐ “Training quality is outstanding.”</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 text-center">
+  <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+  <button class="px-12 py-4 bg-cyan-400 text-slate-900 rounded-full font-semibold hover:scale-105 transition">
+    Get in Touch
+  </button>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-sm text-slate-400 border-t border-slate-700">
+  © 2025 Aryan Software Solutions
+</footer>
+
+</body>
+</html>
